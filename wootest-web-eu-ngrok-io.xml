@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+           xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="ContentApp">
+    <!-- Begin Basic Settings: Add-in metadata, used for all versions of Office unless override provided. -->
+    <!-- IMPORTANT! Id must be unique for your add-in, if you reuse this manifest ensure that you change this id to a new GUID. -->
+    <Id>00000000-0000-4000-a000-00002ff2efff</Id>
+    <!--Version. Updates from the store only get triggered if there is a version change. -->
+    <Version>1.0.0.10</Version>
+    <ProviderName>Wooclap</ProviderName>
+    <DefaultLocale>en-US</DefaultLocale>
+    <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
+    <DisplayName DefaultValue="Wooclap - wootest-web.eu.ngrok.io"/>
+    <Description
+            DefaultValue="Wooclap makes it easy to interact with your students in realtime and makes your classes more effective."/>
+    <!-- Icon for your add-in. Used on installation screens and the add-ins dialog. -->
+    <IconUrl DefaultValue="https://i.imgur.com/eWfdsiB.png"/>
+    <HighResolutionIconUrl DefaultValue="https://i.imgur.com/aS7fsuE.png"/>
+    <!--If you plan to submit this add-in to the Office Store, uncomment the SupportUrl element below-->
+    <SupportUrl DefaultValue="https://docs.wooclap.com/en/"/>
+    <!-- Domains that will be allowed when navigating. For example, if you use ShowTaskpane and then have an href link, navigation will only be allowed if the domain is on this list. -->
+    <AppDomains>
+        <AppDomain>https://wootest-api.eu.ngrok.io</AppDomain>
+        <AppDomain>https://wootest-web.eu.ngrok.io</AppDomain>
+        <AppDomain>https://www.wooclap.com</AppDomain>
+        <AppDomain>https://wootrack.production.eks.wooclap.com</AppDomain>
+        <AppDomain>https://wootrack.development.eks.wooclap.com</AppDomain>
+        <AppDomain>https://wootrack-staging.development.eks.wooclap.com</AppDomain>
+        <AppDomain>https://accounts.google.com</AppDomain>
+        <AppDomain>https://accounts.google.ac</AppDomain>
+        <AppDomain>https://accounts.google.ad</AppDomain>
+        <AppDomain>https://accounts.google.ae</AppDomain>
+        <AppDomain>https://accounts.google.com.af</AppDomain>
+        <AppDomain>https://accounts.google.com.ag</AppDomain>
+        <AppDomain>https://accounts.google.al</AppDomain>
+        <AppDomain>https://accounts.google.am</AppDomain>
+        <AppDomain>https://accounts.google.co.ao</AppDomain>
+        <AppDomain>https://accounts.google.com.ar</AppDomain>
+        <AppDomain>https://accounts.google.as</AppDomain>
+        <AppDomain>https://accounts.google.at</AppDomain>
+        <AppDomain>https://accounts.google.com.au</AppDomain>
+        <AppDomain>https://accounts.google.az</AppDomain>
+        <AppDomain>https://accounts.google.ba</AppDomain>
+        <AppDomain>https://accounts.google.com.bd</AppDomain>
+        <AppDomain>https://accounts.google.be</AppDomain>
+        <AppDomain>https://accounts.google.bf</AppDomain>
+        <AppDomain>https://accounts.google.bg</AppDomain>
+        <AppDomain>https://accounts.google.com.bh</AppDomain>
+        <AppDomain>https://accounts.google.bi</AppDomain>
+        <AppDomain>https://accounts.google.bj</AppDomain>
+        <AppDomain>https://accounts.google.com.bn</AppDomain>
+        <AppDomain>https://accounts.google.com.bo</AppDomain>
+        <AppDomain>https://accounts.google.com.br</AppDomain>
+        <AppDomain>https://accounts.google.bs</AppDomain>
+        <AppDomain>https://accounts.google.bt</AppDomain>
+        <AppDomain>https://accounts.google.co.bw</AppDomain>
+        <AppDomain>https://accounts.google.by</AppDomain>
+        <AppDomain>https://accounts.google.com.bz</AppDomain>
+        <AppDomain>https://accounts.google.ca</AppDomain>
+        <AppDomain>https://accounts.google.com.kh</AppDomain>
+        <AppDomain>https://accounts.google.cc</AppDomain>
+        <AppDomain>https://accounts.google.cd</AppDomain>
+        <AppDomain>https://accounts.google.cf</AppDomain>
+        <AppDomain>https://accounts.google.cat</AppDomain>
+        <AppDomain>https://accounts.google.cg</AppDomain>
+        <AppDomain>https://accounts.google.ch</AppDomain>
+        <AppDomain>https://accounts.google.ci</AppDomain>
+        <AppDomain>https://accounts.google.co.ck</AppDomain>
+        <AppDomain>https://accounts.google.cl</AppDomain>
+        <AppDomain>https://accounts.google.cm</AppDomain>
+        <AppDomain>https://accounts.google.com.co</AppDomain>
+        <AppDomain>https://accounts.google.co.cr</AppDomain>
+        <AppDomain>https://accounts.google.com.cu</AppDomain>
+        <AppDomain>https://accounts.google.cv</AppDomain>
+        <AppDomain>https://accounts.google.com.cy</AppDomain>
+        <AppDomain>https://accounts.google.cz</AppDomain>
+        <AppDomain>https://accounts.google.de</AppDomain>
+        <AppDomain>https://accounts.google.dj</AppDomain>
+        <AppDomain>https://accounts.google.dk</AppDomain>
+        <AppDomain>https://accounts.google.dm</AppDomain>
+        <AppDomain>https://accounts.google.com.do</AppDomain>
+        <AppDomain>https://accounts.google.dz</AppDomain>
+        <AppDomain>https://accounts.google.com.ec</AppDomain>
+        <AppDomain>https://accounts.google.ee</AppDomain>
+        <AppDomain>https://accounts.google.com.eg</AppDomain>
+        <AppDomain>https://accounts.google.es</AppDomain>
+        <AppDomain>https://accounts.google.com.et</AppDomain>
+        <AppDomain>https://accounts.google.fi</AppDomain>
+        <AppDomain>https://accounts.google.com.fj</AppDomain>
+        <AppDomain>https://accounts.google.fm</AppDomain>
+        <AppDomain>https://accounts.google.fr</AppDomain>
+        <AppDomain>https://accounts.google.ga</AppDomain>
+        <AppDomain>https://accounts.google.ge</AppDomain>
+        <AppDomain>https://accounts.google.gg</AppDomain>
+        <AppDomain>https://accounts.google.com.gh</AppDomain>
+        <AppDomain>https://accounts.google.com.gi</AppDomain>
+        <AppDomain>https://accounts.google.gl</AppDomain>
+        <AppDomain>https://accounts.google.gm</AppDomain>
+        <AppDomain>https://accounts.google.gp</AppDomain>
+        <AppDomain>https://accounts.google.gr</AppDomain>
+        <AppDomain>https://accounts.google.com.gt</AppDomain>
+        <AppDomain>https://accounts.google.gy</AppDomain>
+        <AppDomain>https://accounts.google.com.hk</AppDomain>
+        <AppDomain>https://accounts.google.hn</AppDomain>
+        <AppDomain>https://accounts.google.hr</AppDomain>
+        <AppDomain>https://accounts.google.ht</AppDomain>
+        <AppDomain>https://accounts.google.hu</AppDomain>
+        <AppDomain>https://accounts.google.co.id</AppDomain>
+        <AppDomain>https://accounts.google.iq</AppDomain>
+        <AppDomain>https://accounts.google.ie</AppDomain>
+        <AppDomain>https://accounts.google.co.il</AppDomain>
+        <AppDomain>https://accounts.google.im</AppDomain>
+        <AppDomain>https://accounts.google.co.in</AppDomain>
+        <AppDomain>https://accounts.google.is</AppDomain>
+        <AppDomain>https://accounts.google.it</AppDomain>
+        <AppDomain>https://accounts.google.je</AppDomain>
+        <AppDomain>https://accounts.google.com.jm</AppDomain>
+        <AppDomain>https://accounts.google.jo</AppDomain>
+        <AppDomain>https://accounts.google.co.jp</AppDomain>
+        <AppDomain>https://accounts.google.co.ke</AppDomain>
+        <AppDomain>https://accounts.google.ki</AppDomain>
+        <AppDomain>https://accounts.google.kg</AppDomain>
+        <AppDomain>https://accounts.google.co.kr</AppDomain>
+        <AppDomain>https://accounts.google.com.kw</AppDomain>
+        <AppDomain>https://accounts.google.kz</AppDomain>
+        <AppDomain>https://accounts.google.la</AppDomain>
+        <AppDomain>https://accounts.google.com.lb</AppDomain>
+        <AppDomain>https://accounts.google.li</AppDomain>
+        <AppDomain>https://accounts.google.lk</AppDomain>
+        <AppDomain>https://accounts.google.co.ls</AppDomain>
+        <AppDomain>https://accounts.google.lt</AppDomain>
+        <AppDomain>https://accounts.google.lu</AppDomain>
+        <AppDomain>https://accounts.google.lv</AppDomain>
+        <AppDomain>https://accounts.google.com.ly</AppDomain>
+        <AppDomain>https://accounts.google.co.ma</AppDomain>
+        <AppDomain>https://accounts.google.md</AppDomain>
+        <AppDomain>https://accounts.google.me</AppDomain>
+        <AppDomain>https://accounts.google.mg</AppDomain>
+        <AppDomain>https://accounts.google.mk</AppDomain>
+        <AppDomain>https://accounts.google.ml</AppDomain>
+        <AppDomain>https://accounts.google.com.mm</AppDomain>
+        <AppDomain>https://accounts.google.mn</AppDomain>
+        <AppDomain>https://accounts.google.ms</AppDomain>
+        <AppDomain>https://accounts.google.com.mt</AppDomain>
+        <AppDomain>https://accounts.google.mu</AppDomain>
+        <AppDomain>https://accounts.google.mv</AppDomain>
+        <AppDomain>https://accounts.google.mw</AppDomain>
+        <AppDomain>https://accounts.google.com.mx</AppDomain>
+        <AppDomain>https://accounts.google.com.my</AppDomain>
+        <AppDomain>https://accounts.google.co.mz</AppDomain>
+        <AppDomain>https://accounts.google.com.na</AppDomain>
+        <AppDomain>https://accounts.google.ne</AppDomain>
+        <AppDomain>https://accounts.google.com.nf</AppDomain>
+        <AppDomain>https://accounts.google.com.ng</AppDomain>
+        <AppDomain>https://accounts.google.com.ni</AppDomain>
+        <AppDomain>https://accounts.google.nl</AppDomain>
+        <AppDomain>https://accounts.google.no</AppDomain>
+        <AppDomain>https://accounts.google.com.np</AppDomain>
+        <AppDomain>https://accounts.google.nr</AppDomain>
+        <AppDomain>https://accounts.google.nu</AppDomain>
+        <AppDomain>https://accounts.google.co.nz</AppDomain>
+        <AppDomain>https://accounts.google.com.om</AppDomain>
+        <AppDomain>https://accounts.google.com.pk</AppDomain>
+        <AppDomain>https://accounts.google.com.pa</AppDomain>
+        <AppDomain>https://accounts.google.com.pe</AppDomain>
+        <AppDomain>https://accounts.google.com.ph</AppDomain>
+        <AppDomain>https://accounts.google.pl</AppDomain>
+        <AppDomain>https://accounts.google.com.pg</AppDomain>
+        <AppDomain>https://accounts.google.pn</AppDomain>
+        <AppDomain>https://accounts.google.com.pr</AppDomain>
+        <AppDomain>https://accounts.google.ps</AppDomain>
+        <AppDomain>https://accounts.google.pt</AppDomain>
+        <AppDomain>https://accounts.google.com.py</AppDomain>
+        <AppDomain>https://accounts.google.com.qa</AppDomain>
+        <AppDomain>https://accounts.google.ro</AppDomain>
+        <AppDomain>https://accounts.google.rs</AppDomain>
+        <AppDomain>https://accounts.google.ru</AppDomain>
+        <AppDomain>https://accounts.google.rw</AppDomain>
+        <AppDomain>https://accounts.google.com.sa</AppDomain>
+        <AppDomain>https://accounts.google.com.sb</AppDomain>
+        <AppDomain>https://accounts.google.sc</AppDomain>
+        <AppDomain>https://accounts.google.se</AppDomain>
+        <AppDomain>https://accounts.google.com.sg</AppDomain>
+        <AppDomain>https://accounts.google.sh</AppDomain>
+        <AppDomain>https://accounts.google.si</AppDomain>
+        <AppDomain>https://accounts.google.sk</AppDomain>
+        <AppDomain>https://accounts.google.com.sl</AppDomain>
+        <AppDomain>https://accounts.google.sn</AppDomain>
+        <AppDomain>https://accounts.google.sm</AppDomain>
+        <AppDomain>https://accounts.google.so</AppDomain>
+        <AppDomain>https://accounts.google.st</AppDomain>
+        <AppDomain>https://accounts.google.sr</AppDomain>
+        <AppDomain>https://accounts.google.com.sv</AppDomain>
+        <AppDomain>https://accounts.google.td</AppDomain>
+        <AppDomain>https://accounts.google.tg</AppDomain>
+        <AppDomain>https://accounts.google.co.th</AppDomain>
+        <AppDomain>https://accounts.google.com.tj</AppDomain>
+        <AppDomain>https://accounts.google.tk</AppDomain>
+        <AppDomain>https://accounts.google.tl</AppDomain>
+        <AppDomain>https://accounts.google.tm</AppDomain>
+        <AppDomain>https://accounts.google.to</AppDomain>
+        <AppDomain>https://accounts.google.tn</AppDomain>
+        <AppDomain>https://accounts.google.com.tr</AppDomain>
+        <AppDomain>https://accounts.google.tt</AppDomain>
+        <AppDomain>https://accounts.google.com.tw</AppDomain>
+        <AppDomain>https://accounts.google.co.tz</AppDomain>
+        <AppDomain>https://accounts.google.com.ua</AppDomain>
+        <AppDomain>https://accounts.google.co.ug</AppDomain>
+        <AppDomain>https://accounts.google.co.uk</AppDomain>
+        <AppDomain>https://accounts.google.com.uy</AppDomain>
+        <AppDomain>https://accounts.google.co.uz</AppDomain>
+        <AppDomain>https://accounts.google.com.vc</AppDomain>
+        <AppDomain>https://accounts.google.co.ve</AppDomain>
+        <AppDomain>https://accounts.google.vg</AppDomain>
+        <AppDomain>https://accounts.google.co.vi</AppDomain>
+        <AppDomain>https://accounts.google.com.vn</AppDomain>
+        <AppDomain>https://accounts.google.vu</AppDomain>
+        <AppDomain>https://accounts.google.ws</AppDomain>
+        <AppDomain>https://accounts.google.co.za</AppDomain>
+        <AppDomain>https://accounts.google.co.zm</AppDomain>
+        <AppDomain>https://accounts.google.co.zw</AppDomain>
+        <AppDomain>https://login.microsoftonline.com</AppDomain>
+        <AppDomain>https://device.login.microsoftonline.com</AppDomain>
+        <AppDomain>https://www.linkedin.com</AppDomain>
+        <AppDomain>https://www.facebook.com</AppDomain>
+    </AppDomains>
+    <!--End Basic Settings. -->
+    <!--Begin TaskPane Mode integration. This section is used if there are no VersionOverrides or if the Office client version does not support add-in commands. -->
+    <Hosts>
+        <Host Name="Presentation"/>
+    </Hosts>
+    <Requirements>
+        <Sets>
+            <!-- We don't actually need AddinCommands but it allows us to drop support for PowerPoint 2013 -->
+            <Set Name="AddinCommands"/>
+            <Set Name="Selection"/>
+            <Set Name="Settings"/>
+        </Sets>
+        <Methods>
+            <Method Name="Document.goToByIdAsync"/>
+        </Methods>
+    </Requirements>
+    <DefaultSettings>
+        <SourceLocation DefaultValue="https://wootest-web.eu.ngrok.io/office-addin#/office-addin"/>
+        <!-- Ideally, it should be 1280x720, but 1000 is the max value -->
+        <RequestedWidth>900</RequestedWidth>
+        <RequestedHeight>500</RequestedHeight>
+    </DefaultSettings>
+    <!-- End TaskPane Mode integration.  -->
+    <Permissions>ReadWriteDocument</Permissions>
+    <AllowSnapshot>false</AllowSnapshot>
+</OfficeApp>
