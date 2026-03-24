@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ppt-addin-manifest
+  description: "Collection of Wooclap PowerPoint Addin manifests"
+  annotations:
+    github.com/project-slug: wooclap/ppt-addin-manifest
+spec:
+  type: other
+  lifecycle: production
+  owner: group:default/developers
